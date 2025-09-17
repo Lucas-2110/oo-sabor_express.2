@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get('/api/hello')
 def hello_world():
-    return {'Hello': 'World '}
+    return {'Hello': 'Mundo'}
 
 @app.get('/api/restaurante/')
 def get_restaurantes(restaurante: str = Query(None)):
